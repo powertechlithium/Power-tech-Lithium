@@ -1,0 +1,242 @@
+/* ========================================================================
+   MS POWERTECH – LITHIUM BATTERY SOLUTIONS
+   Custom Industrial & Modern Tech Stylesheet
+   ======================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --color-primary-dark: #070d1e;
+  --color-navy: #0b152d;
+  --color-navy-card: #0f1c3d;
+  --color-electric-blue: #0ea5e9;
+  --color-electric-blue-hover: #0284c7;
+  --color-green-accent: #10b981;
+  --color-slate-light: #f8fafc;
+  --color-border-dark: rgba(255, 255, 255, 0.08);
+  --color-border-cyan: rgba(14, 165, 233, 0.25);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1e293b;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+.font-mono-tech {
+  font-family: 'Space Grotesk', monospace;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #070d1e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
+}
+
+/* Glassmorphism & Cyber Gradients */
+.glass-nav {
+  background: rgba(7, 13, 30, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-dark {
+  background: rgba(15, 28, 61, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-dark:hover {
+  border-color: rgba(14, 165, 233, 0.4);
+}
+
+/* Subtle glow effects */
+.glow-blue {
+  box-shadow: 0 0 25px -5px rgba(14, 165, 233, 0.35);
+}
+
+.glow-green {
+  box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.35);
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #ffffff 0%, #38bdf8 50%, #0ea5e9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan-green {
+  background: linear-gradient(135deg, #38bdf8 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero Tech Grid Pattern */
+.bg-tech-grid {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.bg-circuit-dots {
+  background-image: radial-gradient(rgba(14, 165, 233, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  box-shadow: 0 10px 25px -5px rgba(34, 197, 94, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 15px 30px -5px rgba(34, 197, 94, 0.7);
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 96px;
+  right: 26px;
+  z-index: 990;
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Card Hover Animations */
+.product-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge styles */
+.badge-real {
+  background: rgba(16, 185, 129, 0.15);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-illustrative {
+  background: rgba(14, 165, 233, 0.15);
+  color: #0284c7;
+  border: 1px solid rgba(14, 165, 233, 0.3);
+}
+
+/* Pulse animation for Live Battery Indicator */
+@keyframes softPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.75; transform: scale(1.05); }
+}
+
+.pulse-indicator {
+  animation: softPulse 2s infinite ease-in-out;
+}
+
+/* Modal Backdrop & Animation */
+.modal-overlay {
+  background-color: rgba(7, 13, 30, 0.75);
+  backdrop-filter: blur(6px);
+}
+
+/* ========================================================================
+   FULL RESPONSIVE LAYOUT ENGINE FOR LAPTOPS & DESKTOPS
+   Expands containers smoothly to eliminate empty left & right voids
+   ======================================================================== */
+
+.max-w-7xl {
+  width: 100% !important;
+}
+
+@media (min-width: 1280px) {
+  /* Standard laptops (1366px - 1440px) */
+  .max-w-7xl {
+    max-width: 1380px !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* MacBooks & 14-15" Laptops (1440px - 1536px) */
+  .max-w-7xl {
+    max-width: 1480px !important;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
+}
+
+@media (min-width: 1536px) {
+  /* 15.6" Laptops (Full HD 1080p scaled at 125%) */
+  .max-w-7xl {
+    max-width: 1580px !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
+@media (min-width: 1720px) {
+  /* Large monitors & Full HD 1080p unscaled */
+  .max-w-7xl {
+    max-width: 1680px !important;
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  /* Full HD & 2K screens */
+  .max-w-7xl {
+    max-width: 1780px !important;
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+}
+
+/* Custom Table Styles */
+.tech-spec-table tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.tech-spec-table td, .tech-spec-table th {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Print Friendly */
+@media print {
+  .whatsapp-float, .back-to-top, nav, footer, #quoteModal {
+    display: none !important;
+  }
+}

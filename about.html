@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us – MS Powertech | Lithium Battery Solutions Moradabad</title>
+  <meta name="description" content="Learn about MS Powertech, an Indian lithium battery manufacturer based in Bhojpur Dharampur, Moradabad, UP. Specializing in LiFePO4 packs for electric mobility and energy storage.">
+  <meta name="keywords" content="About MS Powertech, Lithium Battery Manufacturer Moradabad, LiFePO4 Battery India, Electric Scooter Battery Factory, Bhojpur Dharampur Moradabad">
+  <link rel="canonical" href="https://www.powertechlithium.in/about.html">
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#070d1e',
+              dark: '#0b132b',
+              card: '#0f1c3d',
+              blue: '#0ea5e9',
+              blueHover: '#0284c7',
+              cyan: '#38bdf8',
+              green: '#10b981',
+              silver: '#94a3b8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Sticky Navbar -->
+  <nav id="mainNavbar" class="sticky top-0 z-50 transition-all duration-300 bg-brand-navy/95 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="images/logo.png" alt="MS Powertech Brand Logo" class="w-12 h-12 object-contain group-hover:scale-105 transition drop-shadow">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="text-xl font-extrabold tracking-tight text-white">MS <span class="text-sky-400">POWERTECH</span></span>
+            </div>
+            <p class="text-[10px] uppercase tracking-wider text-slate-400 font-medium">Lithium Battery Solutions</p>
+          </div>
+        </a>
+
+        <div class="hidden lg:flex items-center space-x-7 text-sm font-medium">
+          <a href="index.html" class="nav-link text-slate-300 hover:text-white transition py-2">Home</a>
+          <a href="about.html" class="nav-link text-slate-300 hover:text-white transition py-2">About Us</a>
+          <a href="products.html" class="nav-link text-slate-300 hover:text-white transition py-2">Products</a>
+          <a href="applications.html" class="nav-link text-slate-300 hover:text-white transition py-2">Applications</a>
+          <a href="custom-battery.html" class="nav-link text-slate-300 hover:text-white transition py-2">Custom Battery</a>
+          <a href="manufacturing.html" class="nav-link text-slate-300 hover:text-white transition py-2">Manufacturing</a>
+          <a href="technology-safety.html" class="nav-link text-slate-300 hover:text-white transition py-2">Technology & Safety</a>
+          <a href="contact.html" class="nav-link text-slate-300 hover:text-white transition py-2">Contact Us</a>
+        </div>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <button class="open-quote-modal-btn px-5 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-semibold text-sm shadow-lg shadow-sky-500/20 transition active:scale-95 flex items-center gap-2">
+            <i class="fas fa-file-invoice"></i> Get a Quote
+          </button>
+        </div>
+
+        <div class="flex lg:hidden">
+          <button id="mobileMenuToggle" type="button" class="text-slate-300 hover:text-white p-2 rounded-lg bg-slate-800/60 focus:outline-none">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobileMenuOverlay" class="fixed inset-0 bg-black/70 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <div id="mobileMenu" class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-brand-navy z-50 hidden flex-col shadow-2xl border-l border-slate-800 p-6 overflow-y-auto">
+    <div class="flex justify-between items-center pb-5 border-b border-slate-800">
+      <div class="flex items-center gap-2.5">
+        <img src="images/logo.png" alt="MS Powertech Logo" class="w-8 h-8 object-contain">
+        <span class="font-bold text-white text-base">MS POWERTECH</span>
+      </div>
+      <button id="closeMobileMenu" class="text-slate-400 hover:text-white p-2"><i class="fas fa-times text-xl"></i></button>
+    </div>
+    <div class="flex flex-col space-y-4 py-6 text-sm font-medium">
+      <a href="index.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-home w-5 text-sky-400"></i> Home</a>
+      <a href="about.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-building w-5 text-sky-400"></i> About Us</a>
+      <a href="products.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-battery-full w-5 text-sky-400"></i> Products</a>
+      <a href="applications.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-motorcycle w-5 text-sky-400"></i> Applications</a>
+      <a href="custom-battery.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-cogs w-5 text-sky-400"></i> Custom Battery</a>
+      <a href="manufacturing.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-industry w-5 text-sky-400"></i> Manufacturing</a>
+      <a href="technology-safety.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-shield-virus w-5 text-sky-400"></i> Technology & Safety</a>
+      <a href="contact.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-envelope w-5 text-sky-400"></i> Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Hero Header -->
+  <header class="bg-brand-navy bg-tech-grid text-white py-16 lg:py-20 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="max-w-4xl mx-auto">
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800 border border-sky-500/30 text-sky-400 text-xs font-semibold mb-4">
+          <i class="fas fa-bolt text-yellow-300"></i> Indian Battery Manufacturing
+        </span>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+          Powering the Future with <span class="text-gradient-blue">Advanced Lithium Battery Technology</span>
+        </h1>
+        <p class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+          Reliable, efficient, and innovative LiFePO4 battery solutions supporting India's transition to clean electric mobility and sustainable energy storage.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Company Overview & Story -->
+  <main class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Text Narrative -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="border-l-4 border-sky-500 pl-4">
+          <span class="text-xs font-bold text-sky-600 uppercase tracking-widest">Our Profile</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">MS Powertech – Lithium Battery Solutions</h2>
+        </div>
+
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+          <strong>MS Powertech</strong> is a lithium battery solutions business focused on manufacturing and supplying reliable lithium battery packs for electric mobility and energy storage applications.
+        </p>
+
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+          We specialize in <strong>LiFePO4 battery technology</strong>, using A+ grade lithium cells and offering smart and standard Battery Management System (BMS) configurations.
+        </p>
+
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+          Our core production line manufactures <strong>3 Standard Flagship Models (48V 20Ah, 51V 30Ah, and 60V 30Ah)</strong> for electric two-wheelers with fast turnaround, while all other applications—including electric rickshaw batteries, home inverter energy storage, and industrial packs—are <strong>expertly Made by Custom</strong> according to client requirements.
+        </p>
+
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+          With a focus on customer requirements, manufacturing flexibility, and sustainable energy solutions, MS Powertech aims to support the growing demand for advanced battery technology.
+        </p>
+
+        <!-- Key Pillars Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+            <i class="fas fa-check-circle text-emerald-500 text-lg mb-2"></i>
+            <h4 class="font-bold text-slate-900 text-sm">3 Core Standard Models</h4>
+            <p class="text-xs text-slate-600 mt-1">48V 20Ah, 51V 30Ah, 60V 30Ah ready for fast dispatch (Any quantity welcome).</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+            <i class="fas fa-tools text-purple-500 text-lg mb-2"></i>
+            <h4 class="font-bold text-slate-900 text-sm">Made by Custom (12V-96V+)</h4>
+            <p class="text-xs text-slate-600 mt-1">Custom voltage, capacity, and dimensions to fit specific bays (Prototypes to bulk).</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Visual & Facility Info Card -->
+      <div class="lg:col-span-5 space-y-6">
+        <div class="rounded-3xl overflow-hidden border border-slate-200 shadow-xl bg-slate-950">
+          <div class="p-4 flex items-center justify-center">
+            <img src="assets/images/products/scooter-60v-30ah-front.png" alt="MS Powertech 60V 30Ah Core Standard Lithium Battery" class="w-full h-64 object-contain">
+          </div>
+          <div class="p-6 text-white bg-brand-navy">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-sky-400 uppercase tracking-wider">Facility & Headquarters</span>
+              <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Moradabad, UP</span>
+            </div>
+            <p class="text-sm font-semibold text-slate-200">MS Powertech Manufacturing Workshop</p>
+            <p class="text-xs text-slate-400 mt-1">Bhojpur Dharampur, Moradabad, Uttar Pradesh, India - 244001</p>
+            <div class="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-300">
+              <span>Domain: www.powertechlithium.in</span>
+              <a href="contact.html" class="text-sky-400 hover:underline">Get Directions →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Vision & Mission Section -->
+    <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Vision Card -->
+      <div class="p-8 rounded-3xl bg-brand-navy text-white border border-slate-800 shadow-lg relative overflow-hidden group">
+        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-sky-500/10 rounded-full blur-2xl"></div>
+        <div class="w-12 h-12 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-xl mb-4">
+          <i class="fas fa-eye"></i>
+        </div>
+        <span class="text-xs font-bold text-sky-400 uppercase tracking-widest">Our Vision</span>
+        <h3 class="text-xl sm:text-2xl font-extrabold mt-1 mb-3">A Trusted Indian Energy Brand</h3>
+        <blockquote class="text-sm text-slate-300 italic border-l-2 border-sky-400 pl-4 py-1">
+          "To become a trusted lithium battery manufacturing and energy solutions brand in India."
+        </blockquote>
+        <p class="text-xs text-slate-400 mt-4 leading-relaxed">
+          Through continuous process refinement, authentic component sourcing, and transparent technical specifications, we aim to deliver sustainable value to customers and enterprise fleets.
+        </p>
+      </div>
+
+      <!-- Mission Card -->
+      <div class="p-8 rounded-3xl bg-brand-navy text-white border border-slate-800 shadow-lg relative overflow-hidden group">
+        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-emerald-500/10 rounded-full blur-2xl"></div>
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-4">
+          <i class="fas fa-bullseye"></i>
+        </div>
+        <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Our Mission</span>
+        <h3 class="text-xl sm:text-2xl font-extrabold mt-1 mb-3">Reliable & Clean Mobility Power</h3>
+        <blockquote class="text-sm text-slate-300 italic border-l-2 border-emerald-400 pl-4 py-1">
+          "To deliver reliable, efficient, and innovative lithium battery solutions that support clean energy and electric mobility."
+        </blockquote>
+        <p class="text-xs text-slate-400 mt-4 leading-relaxed">
+          Empowering riders, fleet operators, homeowners, and businesses with safe, zero-emission LiFePO4 battery systems that replace legacy polluting battery technologies.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Capabilities Matrix -->
+    <section class="mt-20 bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-sm">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold text-sky-600 uppercase tracking-widest">Operational Capabilities</span>
+        <h3 class="text-2xl font-extrabold text-slate-900 mt-1">Manufacturing & Customization Strengths</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center text-lg">
+            <i class="fas fa-industry"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base">In-House Pack Assembly</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Equipped for laser-level precision busbar welding, modular bracket structural isolation, and multi-sensor BMS wiring.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base">Advanced BMS Integration</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Support for JK-BMS with active 1A-2A cell balancing, Bluetooth smartphone telemetry, and standard heavy-duty industrial protection boards.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-lg">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base">B2B Wholesale & OEM Supply</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Supplying direct to electric vehicle manufacturers, conversion workshops, solar installers, and local battery retailers across India.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+    <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-sm border-t border-slate-800 pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Facility & Contact Bar -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800/80 text-center md:text-left">
+        
+        <!-- Brand & Facility Location -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-center md:justify-start gap-2.5">
+            <img src="images/logo.png" alt="MS Powertech Logo" class="w-8 h-8 object-contain">
+            <span class="text-lg font-bold text-white tracking-tight">MS <span class="text-sky-400">POWERTECH</span></span>
+          </div>
+          <p class="text-xs text-slate-300 max-w-xl leading-relaxed">
+            <span data-site-address>Bhojpur Dharampur, Moradabad, Uttar Pradesh, India - 244001</span>
+          </p>
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs text-slate-400 pt-1">
+            <a href="tel:+918218492525" data-site-phone-link data-site-phone class="hover:text-white transition flex items-center gap-1.5">
+              <i class="fas fa-phone-alt text-sky-400"></i> +91 82184 92525
+            </a>
+            <span class="hidden sm:inline text-slate-700">�</span>
+            <a href="mailto:Powertechlithium18@gmail.com" data-site-email-link data-site-email class="hover:text-white transition flex items-center gap-1.5">
+              <i class="fas fa-envelope text-sky-400"></i> Powertechlithium18@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Request Quote Button (Centered on mobile, aligned on desktop) -->
+        <div class="flex justify-center md:justify-end w-full md:w-auto">
+          <button class="open-quote-modal-btn w-auto px-6 py-2.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-white font-semibold text-xs transition shadow-md shadow-sky-500/20 inline-flex items-center justify-center gap-2">
+            <i class="fas fa-file-invoice"></i> Request Quote
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Bottom Disclaimer & Copyright -->
+      <div class="pt-6 pb-3 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-slate-400">
+        <p>� <span id="currentYear">2026</span> MS Powertech. All rights reserved.</p>
+        <p class="text-[11px] text-slate-400 text-center md:text-right">
+          No minimum order quantity � order any quantity from single units to bulk supply. Specifications verified per cell & BMS model.
+        </p>
+      </div>
+
+      <!-- Dedicated Bottom-most End Line: Designed and Developed by MTIOT -->
+      <div class="mt-3 pt-3 border-t border-slate-900/90 text-center text-xs text-slate-400">
+        Designed and Developed by <a href="https://www.mtiot.in/" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 font-semibold underline underline-offset-4 transition">MTIOT</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp & Back to top -->
+  <a id="whatsappFloatingBtn" href="#" class="whatsapp-float w-14 h-14 rounded-full bg-emerald-500 text-white flex items-center justify-center text-2xl shadow-2xl transition" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <button id="backToTopBtn" class="back-to-top w-11 h-11 rounded-full bg-slate-800 hover:bg-sky-500 text-white flex items-center justify-center text-sm shadow-xl transition">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Quote Modal Placeholder -->
+  <div id="quoteModal" class="fixed inset-0 modal-overlay z-50 hidden items-center justify-center p-4">
+    <div class="bg-brand-navy rounded-2xl border border-slate-700 shadow-2xl max-w-lg w-full p-6 text-white relative">
+      <button class="close-modal-btn absolute top-5 right-5 text-slate-400 hover:text-white text-lg"><i class="fas fa-times"></i></button>
+      <h3 class="text-base font-bold mb-1">Request a Quote</h3>
+      <form id="quoteModalForm" class="space-y-3 text-xs mt-4">
+        <input type="text" name="name" required placeholder="Name" class="w-full p-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white">
+        <input type="tel" name="phone" required placeholder="Phone" class="w-full p-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white">
+        <input type="email" name="email" required placeholder="Email" class="w-full p-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white">
+        <textarea name="message" rows="2" placeholder="Requirement" class="w-full p-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white"></textarea>
+        <button type="submit" class="w-full py-2.5 rounded-xl bg-sky-500 text-white font-bold">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Product Details – MS Powertech Lithium Battery Solutions</title>
+  <meta id="metaDesc" name="description" content="Technical specifications and manufacturer enquiry for MS Powertech high-performance LiFePO4 lithium battery pack.">
+  <link rel="canonical" href="https://www.powertechlithium.in/product-detail.html">
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#070d1e',
+              dark: '#0b132b',
+              card: '#0f1c3d',
+              blue: '#0ea5e9',
+              blueHover: '#0284c7',
+              cyan: '#38bdf8',
+              green: '#10b981',
+              silver: '#94a3b8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Sticky Navbar -->
+  <nav id="mainNavbar" class="sticky top-0 z-50 transition-all duration-300 bg-brand-navy/95 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="images/logo.png" alt="MS Powertech Brand Logo" class="w-12 h-12 object-contain group-hover:scale-105 transition drop-shadow">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="text-xl font-extrabold tracking-tight text-white">MS <span class="text-sky-400">POWERTECH</span></span>
+            </div>
+            <p class="text-[10px] uppercase tracking-wider text-slate-400 font-medium">Lithium Battery Solutions</p>
+          </div>
+        </a>
+
+        <div class="hidden lg:flex items-center space-x-7 text-sm font-medium">
+          <a href="index.html" class="nav-link text-slate-300 hover:text-white transition py-2">Home</a>
+          <a href="about.html" class="nav-link text-slate-300 hover:text-white transition py-2">About Us</a>
+          <a href="products.html" class="nav-link text-slate-300 hover:text-white transition py-2">Products</a>
+          <a href="applications.html" class="nav-link text-slate-300 hover:text-white transition py-2">Applications</a>
+          <a href="custom-battery.html" class="nav-link text-slate-300 hover:text-white transition py-2">Custom Battery</a>
+          <a href="manufacturing.html" class="nav-link text-slate-300 hover:text-white transition py-2">Manufacturing</a>
+          <a href="technology-safety.html" class="nav-link text-slate-300 hover:text-white transition py-2">Technology & Safety</a>
+          <a href="contact.html" class="nav-link text-slate-300 hover:text-white transition py-2">Contact Us</a>
+        </div>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <button class="open-quote-modal-btn px-5 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-semibold text-sm shadow-lg shadow-sky-500/20 transition active:scale-95 flex items-center gap-2">
+            <i class="fas fa-file-invoice"></i> Get a Quote
+          </button>
+        </div>
+
+        <div class="flex lg:hidden">
+          <button id="mobileMenuToggle" type="button" class="text-slate-300 hover:text-white p-2 rounded-lg bg-slate-800/60 focus:outline-none">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobileMenuOverlay" class="fixed inset-0 bg-black/70 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <div id="mobileMenu" class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-brand-navy z-50 hidden flex-col shadow-2xl border-l border-slate-800 p-6 overflow-y-auto">
+    <div class="flex justify-between items-center pb-5 border-b border-slate-800">
+      <div class="flex items-center gap-2.5">
+        <img src="images/logo.png" alt="MS Powertech Logo" class="w-8 h-8 object-contain">
+        <span class="font-bold text-white text-base">MS POWERTECH</span>
+      </div>
+      <button id="closeMobileMenu" class="text-slate-400 hover:text-white p-2"><i class="fas fa-times text-xl"></i></button>
+    </div>
+    <div class="flex flex-col space-y-4 py-6 text-sm font-medium">
+      <a href="index.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-home w-5 text-sky-400"></i> Home</a>
+      <a href="about.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-building w-5 text-sky-400"></i> About Us</a>
+      <a href="products.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-battery-full w-5 text-sky-400"></i> Products</a>
+      <a href="applications.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-motorcycle w-5 text-sky-400"></i> Applications</a>
+      <a href="custom-battery.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-cogs w-5 text-sky-400"></i> Custom Battery</a>
+      <a href="manufacturing.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-industry w-5 text-sky-400"></i> Manufacturing</a>
+      <a href="technology-safety.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-shield-virus w-5 text-sky-400"></i> Technology & Safety</a>
+      <a href="contact.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-envelope w-5 text-sky-400"></i> Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Breadcrumb Bar -->
+  <div class="bg-white border-b border-slate-200 py-3.5 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 text-xs text-slate-500">
+      <a href="index.html" class="hover:text-sky-600 transition">Home</a>
+      <i class="fas fa-chevron-right text-[9px] text-slate-400"></i>
+      <a href="products.html" class="hover:text-sky-600 transition">Products</a>
+      <i class="fas fa-chevron-right text-[9px] text-slate-400"></i>
+      <span id="breadcrumbCategory" class="text-slate-600 font-medium">Category</span>
+      <i class="fas fa-chevron-right text-[9px] text-slate-400"></i>
+      <span id="breadcrumbTitle" class="text-sky-600 font-bold truncate">Product Title</span>
+    </div>
+  </div>
+
+  <!-- Product Detail Core -->
+  <main class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      
+      <!-- Left Column: Image Gallery & Badges -->
+      <div class="lg:col-span-6 space-y-4">
+        
+        <!-- Main Image Stage with Auto-Scroll & Change Image Buttons -->
+        <div id="galleryStage" class="relative bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 shadow-md aspect-square flex items-center justify-center p-4 group">
+          <img id="mainGalleryImg" src="" alt="Battery Detail View" class="max-w-full max-h-full object-contain transition-all duration-300">
+          
+          <div id="badgeContainer" class="absolute top-4 left-4 z-10">
+            <span id="photoBadge" class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600 text-white shadow">
+              Actual Product Photograph
+            </span>
+          </div>
+
+          <div class="absolute top-4 right-4 z-10">
+            <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-slate-950/80 text-sky-300 border border-slate-700/80 backdrop-blur-sm flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Auto Slide
+            </span>
+          </div>
+
+          <!-- Change Image Left/Right Buttons -->
+          <button id="prevGalleryBtn" type="button" class="absolute left-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-slate-950/80 hover:bg-sky-500 text-white flex items-center justify-center transition shadow-2xl z-20 focus:outline-none border border-slate-700 hover:border-sky-400 hover:scale-105" aria-label="Previous Image" title="Change to Previous Image">
+            <i class="fas fa-chevron-left text-sm"></i>
+          </button>
+          <button id="nextGalleryBtn" type="button" class="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-slate-950/80 hover:bg-sky-500 text-white flex items-center justify-center transition shadow-2xl z-20 focus:outline-none border border-slate-700 hover:border-sky-400 hover:scale-105" aria-label="Next Image" title="Change to Next Image">
+            <i class="fas fa-chevron-right text-sm"></i>
+          </button>
+
+          <!-- Auto-Scroll Indicator Dots -->
+          <div id="galleryDots" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-20 bg-slate-950/60 px-2.5 py-1 rounded-full backdrop-blur-sm border border-slate-800">
+            <!-- Dots injected via JS -->
+          </div>
+        </div>
+
+        <!-- Thumbnail Gallery Strip -->
+        <div id="galleryThumbnails" class="flex gap-2.5 overflow-x-auto pb-2 pt-1">
+          <!-- Thumbnails injected via JS -->
+        </div>
+
+      </div>
+
+      <!-- Right Column: Product Overview, Highlights & Enquiries -->
+      <div class="lg:col-span-6 space-y-6">
+        
+        <div>
+          <span id="productCategoryBadge" class="text-xs font-bold text-sky-600 uppercase tracking-widest">
+            Electric Mobility
+          </span>
+          <h1 id="productName" class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1 leading-tight">
+            MS Powertech Lithium Battery Pack
+          </h1>
+          <p id="productTagline" class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+            High-performance LiFePO4 energy solution.
+          </p>
+        </div>
+
+        <!-- Quick Spec Cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm text-center">
+            <p class="text-[10px] font-semibold text-slate-500 uppercase">Voltage</p>
+            <p id="quickVoltage" class="text-sm sm:text-base font-extrabold text-slate-900 mt-0.5 font-mono">60V</p>
+          </div>
+          <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm text-center">
+            <p class="text-[10px] font-semibold text-slate-500 uppercase">Capacity</p>
+            <p id="quickCapacity" class="text-sm sm:text-base font-extrabold text-slate-900 mt-0.5 font-mono">30Ah</p>
+          </div>
+          <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm text-center">
+            <p class="text-[10px] font-semibold text-slate-500 uppercase">Chemistry</p>
+            <p class="text-sm sm:text-base font-extrabold text-emerald-600 mt-0.5">LiFePO4</p>
+          </div>
+          <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm text-center">
+            <p class="text-[10px] font-semibold text-slate-500 uppercase">Order Quantity</p>
+            <p id="quickMoq" class="text-xs font-bold text-emerald-600 mt-0.5">Any Quantity</p>
+          </div>
+        </div>
+
+        <!-- Pricing Notice Banner -->
+        <div class="p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-center gap-3">
+          <i class="fas fa-tag text-amber-600 text-base flex-shrink-0"></i>
+          <div>
+            <strong class="font-bold">B2B Direct Factory Pricing:</strong>
+            <span class="text-amber-800 ml-1">Contact sales for current pricing, bulk quantity rates, and availability.</span>
+          </div>
+        </div>
+
+        <!-- Key Features List -->
+        <div>
+          <h3 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-2.5">Key Features</h3>
+          <ul id="productFeaturesList" class="space-y-1.5 text-xs text-slate-700">
+            <!-- Injected via JS -->
+          </ul>
+        </div>
+
+        <!-- Primary Action Callouts -->
+        <div class="pt-1 space-y-2.5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <a id="btnDetailWhatsApp" href="#" target="_blank" class="py-3 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs text-center shadow-md transition flex items-center justify-center gap-2">
+              <i class="fab fa-whatsapp text-base"></i>
+              <span>Enquire on WhatsApp</span>
+            </a>
+            <button id="btnDetailQuoteModal" class="open-quote-modal-btn py-3 px-5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs text-center shadow-md transition flex items-center justify-center gap-2">
+              <i class="fas fa-file-invoice"></i>
+              <span>Request Price Quote</span>
+            </button>
+          </div>
+          <p class="text-[11px] text-slate-500 text-center">
+            <i class="fas fa-shield-alt text-emerald-500 mr-1"></i> Grade-A+ BIS cells • Tested before dispatch • Direct from Moradabad factory
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Full Technical Specifications Deep-Dive Table -->
+    <section class="mt-16 pt-12 border-t border-slate-200">
+      <div class="w-full max-w-5xl xl:max-w-6xl">
+        <span class="text-xs font-bold text-sky-600 uppercase tracking-widest">Engineering Data</span>
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-1 mb-6">Complete Technical Specifications</h2>
+        
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden text-xs">
+          <table class="w-full tech-spec-table">
+            <thead>
+              <tr class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200 text-left">
+                <th class="w-1/3">Parameter</th>
+                <th>Specification Value</th>
+              </tr>
+            </thead>
+            <tbody id="fullSpecsTableBody">
+              <!-- Injected via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Enquiry Form Section -->
+    <section class="mt-16 bg-brand-navy rounded-3xl p-8 sm:p-12 text-white border border-slate-800">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 space-y-4">
+          <span class="text-xs font-bold text-sky-400 uppercase tracking-wider">Fast Turnaround</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Direct Product Enquiry</h2>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Need specifications sheets, custom dimensions, or distributor volume quotes? Fill out the form or reach our Moradabad facility directly.
+          </p>
+          <div class="pt-2 text-xs space-y-2 text-slate-400">
+            <p class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Flexible Orders: Single units to bulk orders welcome</p>
+            <p class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Fast dispatch across Uttar Pradesh & all India</p>
+            <p class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Custom enclosure and BMS adaptation</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-slate-900/90 p-6 sm:p-8 rounded-2xl border border-slate-700">
+          <form id="inlineProductEnquiryForm" class="space-y-4 text-xs">
+            <input type="hidden" id="formHiddenProductName" name="product">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-slate-300 font-semibold mb-1">Your Name *</label>
+                <input type="text" name="name" required placeholder="Full Name" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white focus:outline-none focus:border-sky-500">
+              </div>
+              <div>
+                <label class="block text-slate-300 font-semibold mb-1">WhatsApp Phone *</label>
+                <input type="tel" name="phone" required placeholder="Phone Number" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white focus:outline-none focus:border-sky-500">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-slate-300 font-semibold mb-1">Email Address *</label>
+                <input type="email" name="email" required placeholder="email@domain.com" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white focus:outline-none focus:border-sky-500">
+              </div>
+              <div>
+                <label class="block text-slate-300 font-semibold mb-1">Quantity Required</label>
+                <input type="text" name="quantity" placeholder="e.g. 5, 20, 50 units" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white focus:outline-none focus:border-sky-500">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-slate-300 font-semibold mb-1">Enquiry / Application Details</label>
+              <textarea name="message" rows="3" placeholder="Specify scooter/inverter model, tray dimensions or smart BMS preferences..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white focus:outline-none focus:border-sky-500"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-white font-bold text-xs shadow-md transition">
+              Submit Product Enquiry
+            </button>
+          </form>
+
+          <div id="inlineFormFeedback" class="hidden mt-4"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-sm border-t border-slate-800 pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Facility & Contact Bar -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800/80 text-center md:text-left">
+        
+        <!-- Brand & Facility Location -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-center md:justify-start gap-2.5">
+            <img src="images/logo.png" alt="MS Powertech Logo" class="w-8 h-8 object-contain">
+            <span class="text-lg font-bold text-white tracking-tight">MS <span class="text-sky-400">POWERTECH</span></span>
+          </div>
+          <p class="text-xs text-slate-300 max-w-xl leading-relaxed">
+            <span data-site-address>Bhojpur Dharampur, Moradabad, Uttar Pradesh, India - 244001</span>
+          </p>
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs text-slate-400 pt-1">
+            <a href="tel:+918218492525" data-site-phone-link data-site-phone class="hover:text-white transition flex items-center gap-1.5">
+              <i class="fas fa-phone-alt text-sky-400"></i> +91 82184 92525
+            </a>
+            <span class="hidden sm:inline text-slate-700">�</span>
+            <a href="mailto:Powertechlithium18@gmail.com" data-site-email-link data-site-email class="hover:text-white transition flex items-center gap-1.5">
+              <i class="fas fa-envelope text-sky-400"></i> Powertechlithium18@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Request Quote Button (Centered on mobile, aligned on desktop) -->
+        <div class="flex justify-center md:justify-end w-full md:w-auto">
+          <button class="open-quote-modal-btn w-auto px-6 py-2.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-white font-semibold text-xs transition shadow-md shadow-sky-500/20 inline-flex items-center justify-center gap-2">
+            <i class="fas fa-file-invoice"></i> Request Quote
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Bottom Disclaimer & Copyright -->
+      <div class="pt-6 pb-3 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-slate-400">
+        <p>� <span id="currentYear">2026</span> MS Powertech. All rights reserved.</p>
+        <p class="text-[11px] text-slate-400 text-center md:text-right">
+          No minimum order quantity � order any quantity from single units to bulk supply. Specifications verified per cell & BMS model.
+        </p>
+      </div>
+
+      <!-- Dedicated Bottom-most End Line: Designed and Developed by MTIOT -->
+      <div class="mt-3 pt-3 border-t border-slate-900/90 text-center text-xs text-slate-400">
+        Designed and Developed by <a href="https://www.mtiot.in/" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 font-semibold underline underline-offset-4 transition">MTIOT</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp & Back to Top -->
+  <a id="whatsappFloatingBtn" href="#" class="whatsapp-float w-14 h-14 rounded-full bg-emerald-500 text-white flex items-center justify-center text-2xl shadow-2xl transition" title="WhatsApp Enquiry">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <button id="backToTopBtn" class="back-to-top w-11 h-11 rounded-full bg-slate-800 hover:bg-sky-500 text-white flex items-center justify-center text-sm shadow-xl transition">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Quote Modal Placeholder -->
+  <div id="quoteModal" class="fixed inset-0 modal-overlay z-50 hidden items-center justify-center p-4">
+    <div class="bg-brand-navy rounded-2xl border border-slate-700 shadow-2xl max-w-lg w-full p-6 text-white relative">
+      <button class="close-modal-btn absolute top-5 right-5 text-slate-400 hover:text-white text-lg"><i class="fas fa-times"></i></button>
+      <h3 class="text-base font-bold mb-1">Request Pricing</h3>
+      <p class="text-xs text-slate-400 mb-4">Pricing will be shared directly based on current cell rates and quantity.</p>
+      <form id="quoteModalForm" class="space-y-3 text-xs">
+        <input type="text" name="name" required placeholder="Name" class="w-full p-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white">
+        <input type="tel" name="phone" required placeholder="Phone" class="w-full p-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white">
+        <input type="email" name="email" required placeholder="Email" class="w-full p-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white">
+        <input type="text" id="modalProductSelect" name="product" readonly class="w-full p-2.5 rounded-xl bg-slate-800 border border-slate-700 text-sky-400 font-semibold">
+        <textarea name="message" rows="2" placeholder="Quantity or requirement" class="w-full p-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white"></textarea>
+        <button type="submit" class="w-full py-2.5 rounded-xl bg-sky-500 text-white font-bold">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Product Detail Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const productId = params.get('id') || 'scooter-60v-30ah';
+      const product = getProductById(productId) || PRODUCTS_DATA[0];
+
+      // Update Meta & Title
+      document.title = `${product.name} | MS Powertech Moradabad`;
+      const metaEl = document.getElementById('metaDesc');
+      if (metaEl) metaEl.setAttribute('content', `${product.name} (${product.voltage} ${product.capacity}) specifications, Grade-A+ LiFePO4 cells, Smart/Normal BMS.`);
+
+      // Breadcrumbs
+      document.getElementById('breadcrumbCategory').textContent = product.categoryName;
+      document.getElementById('breadcrumbTitle').textContent = product.shortTitle;
+
+      // Header & Texts
+      document.getElementById('productCategoryBadge').textContent = product.categoryName;
+      document.getElementById('productName').textContent = product.name;
+      document.getElementById('productTagline').textContent = product.tagline;
+      document.getElementById('quickVoltage').textContent = product.voltage;
+      document.getElementById('quickCapacity').textContent = product.capacity;
+      document.getElementById('quickMoq').textContent = 'Any Quantity';
+      document.getElementById('overlayVoltCap').textContent = `${product.voltage} • ${product.capacity}`;
+
+      // Badges
+      const photoBadge = document.getElementById('photoBadge');
+      if (photoBadge) {
+        if (product.isCoreStandard) {
+          photoBadge.className = 'px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600 text-white shadow flex items-center gap-1.5';
+          photoBadge.innerHTML = '<i class="fas fa-star text-yellow-300"></i> Core Standard Model';
+        } else {
+          photoBadge.className = 'px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-purple-700 text-white shadow flex items-center gap-1.5';
+          photoBadge.innerHTML = '<i class="fas fa-wrench text-purple-200"></i> Made by Custom';
+        }
+      }
+
+      // Image Gallery Setup: Auto-Change + Change Image Buttons + Thumbnails + Dots
+      const gallery = (product.gallery && product.gallery.length > 0) ? product.gallery : [product.primaryImage];
+      let currentIdx = 0;
+      let autoPlayTimer = null;
+
+      const mainImg = document.getElementById('mainGalleryImg');
+      const thumbStrip = document.getElementById('galleryThumbnails');
+      const dotsContainer = document.getElementById('galleryDots');
+      const prevBtn = document.getElementById('prevGalleryBtn');
+      const nextBtn = document.getElementById('nextGalleryBtn');
+      const galleryStage = document.getElementById('galleryStage');
+
+      function updateActiveImage(idx, animate = true) {
+        currentIdx = (idx + gallery.length) % gallery.length;
+        if (mainImg) {
+          if (animate) {
+            mainImg.style.opacity = '0.3';
+            mainImg.style.transform = 'scale(0.96)';
+            setTimeout(() => {
+              mainImg.src = gallery[currentIdx];
+              mainImg.alt = `${product.name} - View ${currentIdx + 1}`;
+              mainImg.style.opacity = '1';
+              mainImg.style.transform = 'scale(1)';
+            }, 120);
+          } else {
+            mainImg.src = gallery[currentIdx];
+            mainImg.alt = `${product.name} - View ${currentIdx + 1}`;
+          }
+        }
+
+        // Update Thumbnails
+        if (thumbStrip) {
+          thumbStrip.querySelectorAll('.thumb-btn').forEach((btn, i) => {
+            if (i === currentIdx) {
+              btn.className = 'thumb-btn flex-shrink-0 w-16 h-16 rounded-xl overflow-hidden border-2 border-sky-400 ring-2 ring-sky-400/50 bg-slate-900 focus:outline-none transition p-1 shadow-md';
+              btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            } else {
+              btn.className = 'thumb-btn flex-shrink-0 w-16 h-16 rounded-xl overflow-hidden border-2 border-slate-700 bg-slate-900 focus:outline-none transition p-1 opacity-70 hover:opacity-100';
+            }
+          });
+        }
+
+        // Update Dots
+        if (dotsContainer) {
+          dotsContainer.querySelectorAll('.gallery-dot').forEach((dot, i) => {
+            if (i === currentIdx) {
+              dot.className = 'gallery-dot w-5 h-1.5 rounded-full bg-sky-400 transition-all duration-300';
+            } else {
+              dot.className = 'gallery-dot w-1.5 h-1.5 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300';
+            }
+          });
+        }
+      }
+
+      // Render Thumbnails
+      if (thumbStrip) {
+        thumbStrip.innerHTML = gallery.map((imgSrc, idx) => `
+          <button type="button" class="thumb-btn flex-shrink-0 w-16 h-16 rounded-xl overflow-hidden border-2 ${idx === 0 ? 'border-sky-400 ring-2 ring-sky-400/50' : 'border-slate-700'} bg-slate-900 focus:outline-none transition p-1" data-idx="${idx}" title="View Image ${idx + 1}">
+            <img src="${imgSrc}" class="w-full h-full object-contain">
+          </button>
+        `).join('');
+
+        thumbStrip.querySelectorAll('.thumb-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            updateActiveImage(parseInt(btn.getAttribute('data-idx')));
+            resetAutoPlay();
+          });
+        });
+      }
+
+      // Render Dots
+      if (dotsContainer) {
+        dotsContainer.innerHTML = gallery.map((_, idx) => `
+          <button type="button" class="gallery-dot ${idx === 0 ? 'w-5 h-1.5 bg-sky-400' : 'w-1.5 h-1.5 bg-white/40'} rounded-full transition-all duration-300" data-idx="${idx}"></button>
+        `).join('');
+
+        dotsContainer.querySelectorAll('.gallery-dot').forEach(dot => {
+          dot.addEventListener('click', () => {
+            updateActiveImage(parseInt(dot.getAttribute('data-idx')));
+            resetAutoPlay();
+          });
+        });
+      }
+
+      // Change Image Previous / Next Buttons
+      if (prevBtn) {
+        prevBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          updateActiveImage(currentIdx - 1);
+          resetAutoPlay();
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          updateActiveImage(currentIdx + 1);
+          resetAutoPlay();
+        });
+      }
+
+      // Auto-Change Timer (slides every 3.2 seconds)
+      function startAutoPlay() {
+        if (gallery.length > 1 && !autoPlayTimer) {
+          autoPlayTimer = setInterval(() => {
+            updateActiveImage(currentIdx + 1);
+          }, 3200);
+        }
+      }
+
+      function stopAutoPlay() {
+        if (autoPlayTimer) {
+          clearInterval(autoPlayTimer);
+          autoPlayTimer = null;
+        }
+      }
+
+      function resetAutoPlay() {
+        stopAutoPlay();
+        startAutoPlay();
+      }
+
+      if (galleryStage) {
+        galleryStage.addEventListener('mouseenter', stopAutoPlay);
+        galleryStage.addEventListener('mouseleave', startAutoPlay);
+        galleryStage.addEventListener('touchstart', stopAutoPlay, { passive: true });
+        galleryStage.addEventListener('touchend', startAutoPlay, { passive: true });
+      }
+
+      // Initialize First Image & AutoPlay
+      updateActiveImage(0, false);
+      startAutoPlay();
+
+      // Features list (clean, normal bullet points)
+      const featList = document.getElementById('productFeaturesList');
+      if (featList && product.features) {
+        featList.innerHTML = product.features.slice(0, 4).map(f => `
+          <li class="flex items-start gap-2">
+            <i class="fas fa-check-circle text-emerald-500 mt-0.5 text-xs flex-shrink-0"></i>
+            <span>${f}</span>
+          </li>
+        `).join('');
+      }
+
+      // Full Specs Table (one complete clean table)
+      const fullTable = document.getElementById('fullSpecsTableBody');
+      if (fullTable && product.specs) {
+        fullTable.innerHTML = Object.entries(product.specs).map(([key, val]) => `
+          <tr>
+            <td class="font-semibold text-slate-600">${key}</td>
+            <td class="font-bold text-slate-900">${val}</td>
+          </tr>
+        `).join('');
+      }
+
+      // WhatsApp Button with rich product specifications for the owner
+      const waBtn = document.getElementById('btnDetailWhatsApp');
+      const waMsg = `*⚡ DIRECT ENQUIRY TO MS POWERTECH OWNER*\n` +
+        `----------------------------------------\n` +
+        `🔋 *Product:* ${product.name}\n` +
+        `⚡ *Voltage:* ${product.voltage}\n` +
+        `🔋 *Capacity:* ${product.capacity}\n` +
+        `💡 *Nominal Energy:* ${product.energy}\n` +
+        `🔬 *Chemistry:* ${product.chemistry}\n` +
+        `📦 *Order Quantity:* Any quantity welcome (Single units to bulk)\n` +
+        `----------------------------------------\n` +
+        `Hello MS Powertech Owner,\n` +
+        `I am viewing this battery on your website and would like to ask:\n` +
+        `1. What is the direct wholesale / factory price?\n` +
+        `2. What is the availability and dispatch time from Moradabad?\n` +
+        `3. Please share the complete technical datasheet & Smart BMS app details.\n\n` +
+        `Thank you!`;
+      if (waBtn) {
+        waBtn.setAttribute('href', SITE_CONFIG.getWhatsAppUrl(waMsg));
+      }
+
+      // Modal trigger prefill
+      const quoteBtn = document.getElementById('btnDetailQuoteModal');
+      if (quoteBtn) {
+        quoteBtn.setAttribute('data-product-name', product.name);
+      }
+      const hiddenFormInput = document.getElementById('formHiddenProductName');
+      if (hiddenFormInput) {
+        hiddenFormInput.value = product.name;
+      }
+
+      // Inline form submission - sends ALL filled details to owner's WhatsApp immediately
+      const inlineForm = document.getElementById('inlineProductEnquiryForm');
+      if (inlineForm) {
+        inlineForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const fd = new FormData(inlineForm);
+          const data = Object.fromEntries(fd.entries());
+          const leadMsg = `*⚡ PRODUCT ENQUIRY: ${product.name}*\n` +
+            `----------------------------------------\n` +
+            `👤 *Customer Name:* ${data.name}\n` +
+            `📱 *WhatsApp Phone:* ${data.phone}\n` +
+            `✉️ *Email Address:* ${data.email}\n` +
+            `🔋 *Model:* ${product.shortTitle || product.name}\n` +
+            `⚡ *Voltage & Capacity:* ${product.voltage} • ${product.capacity}\n` +
+            `💡 *Nominal Energy:* ${product.energy}\n` +
+            `🔬 *Chemistry:* ${product.chemistry}\n` +
+            `📦 *Quantity Requested:* ${data.quantity || 'Any quantity'}\n` +
+            `📝 *Enquiry Notes:* ${data.message || 'Please share factory pricing, delivery time, and technical datasheet.'}\n` +
+            `----------------------------------------\n` +
+            `📍 *To:* MS Powertech Owner, Moradabad (UP)\n` +
+            `🌐 *Source:* www.powertechlithium.in`;
+
+          // 1. Immediately launch WhatsApp to the owner with all details
+          SITE_CONFIG.sendToWhatsApp(leadMsg);
+
+          // 2. Render feedback on page with direct button
+          const feedback = document.getElementById('inlineFormFeedback');
+          if (feedback) {
+            feedback.innerHTML = `
+              <div class="p-5 rounded-2xl bg-emerald-950/90 border border-emerald-500/50 text-emerald-200 shadow-xl">
+                <div class="flex items-center gap-2 text-emerald-400 mb-2">
+                  <i class="fas fa-check-circle text-xl"></i>
+                  <h4 class="font-bold text-base text-white">Details Sent to Owner's WhatsApp!</h4>
+                </div>
+                <p class="text-xs text-slate-300 mb-3">Your enquiry for ${product.name} has been sent directly to MS Powertech WhatsApp. If WhatsApp didn't open automatically, click below:</p>
+                <a href="${SITE_CONFIG.getWhatsAppUrl(leadMsg)}" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold text-xs shadow transition">
+                  <i class="fab fa-whatsapp text-sm"></i> Open WhatsApp Chat
+                </a>
+              </div>
+            `;
+            feedback.classList.remove('hidden');
+            inlineForm.reset();
+          }
+        });
+      }
+
+    });
+  </script>
+</body>
+</html>
