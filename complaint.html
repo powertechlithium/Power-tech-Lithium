@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Complaint & Support | MS Powertech – Lithium Battery Solutions</title>
+  <meta name="description" content="Official customer complaint and grievance redressal desk of MS Powertech. Submit battery performance, charging, BMS, or warranty issues for priority technical resolution in Moradabad.">
+  <link rel="canonical" href="https://www.powertechlithium.in/complaint.html">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#070d1e',
+              dark: '#0b132b',
+              card: '#0f1c3d',
+              blue: '#0ea5e9',
+              blueHover: '#0284c7',
+              cyan: '#38bdf8',
+              green: '#10b981',
+              silver: '#94a3b8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Industrial Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- Sticky Top Navigation Bar -->
+  <nav id="mainNavbar" class="sticky top-0 z-50 transition-all duration-300 bg-brand-navy/95 backdrop-blur-md border-b border-slate-800/80">
+    <div class="container-fluid max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Brand Logo & Name -->
+        <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+          <img src="images/logo.jpg" alt="MS Powertech Brand Logo" class="w-12 h-12 object-contain rounded-lg group-hover:scale-105 transition drop-shadow">
+          <div class="flex flex-col">
+            <span class="text-xl font-extrabold tracking-tight text-white group-hover:text-sky-400 transition font-heading">
+              MS <span class="text-sky-400">POWERTECH</span>
+            </span>
+            <span class="text-[10px] tracking-wider uppercase text-slate-400 font-medium font-mono-tech">
+              Lithium Battery Solutions
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden lg:flex items-center space-x-7 text-sm font-medium">
+          <a href="index.html" class="nav-link text-slate-300 hover:text-white transition py-1">Home</a>
+          <a href="about.html" class="nav-link text-slate-300 hover:text-white transition py-1">About Us</a>
+          <a href="products.html" class="nav-link text-slate-300 hover:text-white transition py-1">Products</a>
+          <a href="applications.html" class="nav-link text-slate-300 hover:text-white transition py-1">Applications</a>
+          <a href="custom-battery.html" class="nav-link text-slate-300 hover:text-white transition py-1">Custom Battery</a>
+          <a href="manufacturing.html" class="nav-link text-slate-300 hover:text-white transition py-1">Manufacturing</a>
+          <a href="technology-safety.html" class="nav-link text-slate-300 hover:text-white transition py-1">Technology & Safety</a>
+          <a href="contact.html" class="nav-link text-slate-300 hover:text-white transition py-1">Contact</a>
+        </div>
+
+        <!-- Right Action Button -->
+        <div class="hidden sm:flex items-center gap-3">
+          <button class="open-quote-modal-btn px-5 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-semibold text-xs shadow-md shadow-sky-500/20 transition flex items-center gap-2">
+            <i class="fas fa-file-invoice"></i>
+            <span>Request Quote</span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Hamburger -->
+        <div class="flex lg:hidden">
+          <button id="mobileMenuToggle" class="text-slate-300 hover:text-white p-2 focus:outline-none" aria-label="Open mobile menu">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileMenuOverlay" class="fixed inset-0 bg-black/70 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <div id="mobileMenu" class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-brand-navy z-50 hidden flex-col shadow-2xl border-l border-slate-800 p-6 overflow-y-auto">
+    <div class="flex justify-between items-center pb-5 border-b border-slate-800">
+      <div class="flex items-center gap-2.5">
+        <img src="images/logo.jpg" alt="MS Powertech Logo" class="w-8 h-8 object-contain rounded-md">
+        <span class="font-bold text-white text-base">MS POWERTECH</span>
+      </div>
+      <button id="closeMobileMenu" class="text-slate-400 hover:text-white p-2">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+    </div>
+    
+    <div class="flex flex-col space-y-4 py-6 text-sm font-medium">
+      <a href="index.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-home w-5 text-sky-400"></i> Home</a>
+      <a href="about.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-building w-5 text-sky-400"></i> About Us</a>
+      <a href="products.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-battery-full w-5 text-sky-400"></i> Products Catalogue</a>
+      <a href="applications.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-motorcycle w-5 text-sky-400"></i> Applications</a>
+      <a href="custom-battery.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-cogs w-5 text-sky-400"></i> Custom Battery Solutions</a>
+      <a href="manufacturing.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-industry w-5 text-sky-400"></i> Manufacturing Process</a>
+      <a href="technology-safety.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-shield-virus w-5 text-sky-400"></i> Technology & Safety</a>
+      <a href="contact.html" class="text-slate-200 hover:text-sky-400 py-1 flex items-center gap-3"><i class="fas fa-envelope w-5 text-sky-400"></i> Contact Us</a>
+    </div>
+
+    <div class="mt-auto pt-6 border-t border-slate-800 space-y-3">
+      <button class="open-quote-modal-btn w-full py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-white font-semibold text-sm shadow-md transition flex items-center justify-center gap-2">
+        <i class="fas fa-file-invoice"></i> Request a Quote
+      </button>
+      <a href="#" data-whatsapp-enquire class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm shadow-md transition flex items-center justify-center gap-2">
+        <i class="fab fa-whatsapp text-lg"></i> WhatsApp Enquiry
+      </a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <header class="bg-brand-navy bg-tech-grid text-white py-14 border-b border-slate-800">
+    <div class="container-fluid max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl lg:max-w-5xl">
+        
+        <!-- Breadcrumbs -->
+        <nav class="flex items-center gap-2 text-xs text-slate-400 mb-3" aria-label="Breadcrumb">
+          <a href="index.html" class="hover:text-sky-400 transition">Home</a>
+          <span>/</span>
+          <a href="contact.html" class="hover:text-sky-400 transition">Contact Us</a>
+          <span>/</span>
+          <span class="text-sky-400 font-medium">Complaint & Grievance Support</span>
+        </nav>
+
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold mb-3">
+          <i class="fas fa-headset"></i> Customer Care & Technical Grievance Cell • Moradabad Plant
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading mt-1">
+          Register a Complaint / Quality Issue
+        </h1>
+
+        <p class="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed max-w-3xl">
+          At <strong>MS Powertech</strong>, every lithium battery pack is backed by our direct manufacturer warranty and engineering accountability. If you are experiencing technical, charging, BMS, mileage, or transit issues, submit your complaint below for priority resolution by our technical lead.
+        </p>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Complaint Content -->
+  <main class="py-14 container-fluid max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-1">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+      
+      <!-- Left Column: Complaint Registration Form -->
+      <div class="lg:col-span-7 space-y-6">
+        
+        <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm">
+          
+          <div class="mb-6 pb-5 border-b border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Official Support Ticket</span>
+              <h2 class="text-2xl font-extrabold text-slate-900 mt-0.5">Grievance Submission Form</h2>
+            </div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-mono font-bold">
+              <span>Ticket Ref:</span>
+              <span id="ticketNumberDisplay" class="text-sky-600">Generating...</span>
+            </div>
+          </div>
+
+          <form id="complaintForm" class="space-y-4 text-xs">
+            
+            <!-- Customer Information Section -->
+            <div class="space-y-3">
+              <h3 class="text-xs font-bold text-slate-900 uppercase tracking-wider text-slate-500">1. Customer & Contact Details</h3>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-slate-700 font-bold mb-1">Full Name / Business Name *</label>
+                  <input type="text" id="cmpName" name="name" required placeholder="e.g. Rahul Sharma / Fleet Co." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-900 focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                  <label class="block text-slate-700 font-bold mb-1">WhatsApp / Contact Phone *</label>
+                  <input type="tel" id="cmpPhone" name="phone" required placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-900 focus:outline-none focus:border-amber-500">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-slate-700 font-bold mb-1">Email Address *</label>
+                  <input type="email" id="cmpEmail" name="email" required placeholder="you@domain.com" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-900 focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                  <label class="block text-slate-700 font-bold mb-1">City & State *</label>
+                  <input type="text" id="cmpCity" name="city" required placeholder="e.g. Moradabad, Uttar Pradesh" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-900 focus:outline-none focus:border-amber-500">
+                </div>
+              </div>
+            </div>
+
+            <!-- Battery & Order Details Section -->
+            <div class="pt-4 border-t border-slate-100 space-y-3">
+              <h3 class="text-xs font-bold text-slate-900 uppercase tracking-wider text-slate-500">2. Battery Model & Purchase Information</h3>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-slate-700 font-bold mb-1">Battery Model / Configuration *</label>
+                  <select id="cmpModel" name="model" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-900 focus:outline-none focus:border-amber-500">
+                    <option value="48V 20Ah LiFePO4 Scooter Battery">48V 20Ah LiFePO4 (Core Standard)</option>
+                    <option value="51V 30Ah LiFePO4 Scooter Battery">51V 30Ah LiFePO4 (Core Standard)</option>
+                    <option value="60V 30Ah LiFePO4 Scooter Battery">60V 30Ah LiFePO4 (Core Standard)</option>
+                    <option value="60V 45Ah LiFePO4 High Capacity">60V 45Ah LiFePO4 (High Capacity)</option>
+                    <option value="48V 100Ah E-Rickshaw Battery">48V 100Ah E-Rickshaw Battery</option>
+                    <option value="12V 100Ah Inverter / ESS Battery">12V 100Ah Inverter / ESS Battery</option>
+                    <option value="Made by Custom Battery Pack">Made by Custom Battery Pack</option>
+                    <option value="Other / Not Sure">Other / Not Sure</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-slate-700 font-bold mb-1">Application / Vehicle Type *</label>
+                  <select id="cmpApp" name="application" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-900 focus:outline-none focus:border-amber-500">
+                    <option value="Electric Scooter / 2-Wheeler">Electric Scooter / 2-Wheeler</option>
+                    <option value="Electric Rickshaw / 3-Wheeler">Electric Rickshaw / 3-Wheeler</option>
+                    <option value="Home / Commercial Inverter">Home / Commercial Inverter</option>
+                    <option value="Solar Energy Storage">Solar Energy Storage</option>
+                    <option value="Custom Equipment / Machinery">Custom Equipment / Machinery</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-slate-700 font-bold mb-1">Invoice No. / Purchase Date (Optional)</label>
+                  <input type="text" id="cmpInvoice" name="invoice" placeholder="e.g. INV-1042 / Nov 2026" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-900 focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                  <label class="block text-slate-700 font-bold mb-1">Battery Serial No. (If Visible on Label)</label>
+                  <input type="text" id="cmpSerial" name="serial" placeholder="Found on side/top label" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-900 focus:outline-none focus:border-amber-500">
+                </div>
+              </div>
+            </div>
+
+            <!-- Issue Classification Section -->
+            <div class="pt-4 border-t border-slate-100 space-y-3">
+              <h3 class="text-xs font-bold text-slate-900 uppercase tracking-wider text-slate-500">3. Nature of Complaint</h3>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-slate-700 font-bold mb-1">Issue Category *</label>
+                  <select id="cmpCategory" name="category" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-900 focus:outline-none focus:border-amber-500">
+                    <option value="BMS Sudden Cut-off / Trip Issue">BMS Sudden Cut-off / Trip Issue</option>
+                    <option value="Battery Not Charging / Charger Cut-off">Battery Not Charging / Charger Cut-off</option>
+                    <option value="Low Range / Drop in Kilometers">Low Range / Drop in Kilometers</option>
+                    <option value="Voltage Drop Under Load">Voltage Drop Under Load</option>
+                    <option value="Display Meter / Digital Gauge Error">Display Meter / Digital Gauge Error</option>
+                    <option value="Physical Damage / Connector Loose">Physical Damage / Connector Loose</option>
+                    <option value="Delayed Transit / Tracking Inquiry">Delayed Transit / Tracking Inquiry</option>
+                    <option value="Warranty Claim / Replacement">Warranty Claim / Replacement</option>
+                    <option value="Other Technical Difficulty">Other Technical Difficulty</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-slate-700 font-bold mb-1">Urgency Priority *</label>
+                  <select id="cmpPriority" name="priority" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-900 focus:outline-none focus:border-amber-500">
+                    <option value="Standard Technical Review (24-48 Hrs)">Standard Technical Review (24-48 Hrs)</option>
+                    <option value="High Priority - Commercial Operation Affected">High Priority - Commercial Operation Affected</option>
+                    <option value="Urgent - Vehicle Stalled / Immediate Assistance">Urgent - Vehicle Stalled / Immediate Assistance</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-slate-700 font-bold mb-1">Detailed Description of the Issue *</label>
+                <textarea id="cmpDetails" name="details" rows="4" required placeholder="Please provide exact details: When does the problem occur? How many kilometers does it run before tripping? What charger are you using? Has any indicator light flashed?" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-900 focus:outline-none focus:border-amber-500"></textarea>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="pt-2">
+              <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-amber-600 via-orange-600 to-amber-700 hover:from-amber-500 hover:to-orange-500 text-white font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+                <i class="fas fa-paper-plane"></i>
+                <span>Submit Complaint to Support Desk</span>
+              </button>
+              <p class="text-[11px] text-slate-500 text-center mt-2">
+                <i class="fas fa-lock text-slate-400"></i> Your details are forwarded directly to the MS Powertech engineering team for prioritized escalation.
+              </p>
+            </div>
+
+          </form>
+
+          <!-- Feedback Box -->
+          <div id="complaintFeedback" class="hidden mt-6"></div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Column: Support SLAs, Direct Hotline, and Moradabad Plant Info -->
+      <div class="lg:col-span-5 space-y-6">
+        
+        <!-- Support Assurance Card -->
+        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-xl flex-shrink-0">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">Direct Factory Support</h3>
+              <p class="text-xs text-slate-500">Manufacturer Accountability from Moradabad, UP</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Unlike retail traders, <strong>MS Powertech</strong> designs and packs every battery in-house. When you register a complaint, your issue is reviewed by the actual engineers who assembled and tested your pack.
+          </p>
+
+          <div class="space-y-3 pt-2 text-xs">
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
+              <i class="fas fa-check-circle text-emerald-500 text-sm mt-0.5"></i>
+              <div>
+                <strong class="text-slate-900">24-48 Hour Diagnostic Window:</strong>
+                <p class="text-slate-600">Initial remote analysis of BMS logs, charger compatibility, and cell voltage balance.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
+              <i class="fas fa-check-circle text-emerald-500 text-sm mt-0.5"></i>
+              <div>
+                <strong class="text-slate-900">Genuine LiFePO4 Cell Replacement:</strong>
+                <p class="text-slate-600">If internal cell grading discrepancy is found under warranty, defective modules are replaced.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
+              <i class="fas fa-check-circle text-emerald-500 text-sm mt-0.5"></i>
+              <div>
+                <strong class="text-slate-900">Smart BMS Calibration:</strong>
+                <p class="text-slate-600">Over-current, over-voltage, or low-voltage cut-off recalibration for Indian summer & winter extremes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Emergency Escalation Card -->
+        <div class="bg-brand-navy p-6 sm:p-8 rounded-3xl text-white border border-slate-800 shadow-xl space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg flex-shrink-0">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-white text-base">Direct WhatsApp Escalation</h4>
+              <p class="text-xs text-slate-400">Owner & Technical Desk</p>
+            </div>
+          </div>
+          
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Need urgent assistance or have a stalled electric vehicle? Message our support desk directly on WhatsApp with your photos or video of the battery:
+          </p>
+
+          <a href="https://wa.me/918218492525?text=Hello%20MS%20Powertech%2C%20I%20have%20an%20urgent%20complaint%20regarding%20my%20lithium%20battery%20pack." target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-md transition flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp text-base"></i>
+            <span>Chat on WhatsApp (+91 82184 92525)</span>
+          </a>
+
+          <div class="pt-2 border-t border-slate-800 text-xs space-y-1 text-slate-400">
+            <p><strong>Support Email:</strong> <a href="mailto:Powertechlithium18@gmail.com" class="text-sky-400 hover:underline">Powertechlithium18@gmail.com</a></p>
+            <p><strong>Factory Location:</strong> Bhojpur Dharampur, Moradabad, UP - 244001</p>
+            <p><strong>Operating Hours:</strong> Monday – Saturday: 9:00 AM – 7:00 PM IST</p>
+          </div>
+        </div>
+
+        <!-- Return to Contact Us -->
+        <div class="text-center pt-2">
+          <a href="contact.html" class="inline-flex items-center gap-2 text-xs font-bold text-sky-600 hover:text-sky-700 transition">
+            <i class="fas fa-arrow-left"></i>
+            <span>Return to Contact Us & Factory Location</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-sm border-t border-slate-800 pt-12 pb-8 mt-auto">
+    <div class="container-fluid max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Facility & Contact Bar -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800/80 text-center md:text-left">
+        
+        <!-- Brand & Facility Location -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-center md:justify-start gap-2.5">
+            <img src="images/logo.jpg" alt="MS Powertech Logo" class="w-8 h-8 object-contain rounded-md">
+            <span class="text-lg font-bold text-white tracking-tight">MS <span class="text-sky-400">POWERTECH</span></span>
+          </div>
+          <p class="text-xs text-slate-300 max-w-xl leading-relaxed">
+            <span data-site-address>Bhojpur Dharampur, Moradabad, Uttar Pradesh, India - 244001</span>
+          </p>
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs text-slate-400 pt-1">
+            <a href="tel:+918218492525" data-site-phone-link data-site-phone class="hover:text-white transition flex items-center gap-1.5">
+              <i class="fas fa-phone-alt text-sky-400"></i> +91 82184 92525
+            </a>
+            <span class="hidden sm:inline text-slate-700">•</span>
+            <a href="mailto:Powertechlithium18@gmail.com" data-site-email-link data-site-email class="hover:text-white transition flex items-center gap-1.5">
+              <i class="fas fa-envelope text-sky-400"></i> Powertechlithium18@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Request Quote Button -->
+        <div class="flex justify-center md:justify-end w-full md:w-auto">
+          <button class="open-quote-modal-btn w-auto px-6 py-2.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-white font-semibold text-xs transition shadow-md shadow-sky-500/20 inline-flex items-center justify-center gap-2">
+            <i class="fas fa-file-invoice"></i> Request Quote
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Bottom Disclaimer & Copyright -->
+      <div class="pt-6 pb-3 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-slate-400">
+        <p>© <span id="currentYear">2026</span> MS Powertech. All rights reserved.</p>
+        <p class="text-[11px] text-slate-400 text-center md:text-right">
+          No minimum order quantity – order any quantity from single units to bulk supply. Specifications verified per cell & BMS model.
+        </p>
+      </div>
+
+      <!-- Dedicated Bottom-most End Line: Designed and Developed by MTIOT -->
+      <div class="mt-3 pt-3 border-t border-slate-900/90 text-center text-xs text-slate-400">
+        Designed and Developed by <a href="https://www.mtiot.in/" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 font-semibold underline underline-offset-4 transition">MTIOT</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a id="whatsappFloatingBtn" href="#" class="whatsapp-float w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center text-2xl shadow-xl transition" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scroll to Top Button -->
+  <button id="backToTopBtn" class="back-to-top w-11 h-11 rounded-full bg-slate-900/90 hover:bg-sky-500 border border-slate-700 text-white flex items-center justify-center text-sm shadow-xl transition" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Quote Request Modal -->
+  <div id="quoteModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-overlay">
+    <div class="bg-brand-navy rounded-2xl border border-slate-700 shadow-2xl max-w-lg w-full p-6 text-white relative">
+      <div class="flex justify-between items-center pb-4 border-b border-slate-800">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-file-invoice text-sky-400 text-lg"></i>
+          <h3 class="font-bold text-lg">Request a Factory Quote</h3>
+        </div>
+        <button class="close-modal-btn text-slate-400 hover:text-white p-1">
+          <i class="fas fa-times text-lg"></i>
+        </button>
+      </div>
+
+      <form id="quoteModalForm" class="space-y-4 mt-4 text-xs">
+        <div>
+          <label class="block text-slate-300 mb-1 font-medium">Your Name *</label>
+          <input type="text" name="name" required placeholder="Full Name / Company Name" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-sky-500">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-slate-300 mb-1 font-medium">WhatsApp Phone *</label>
+            <input type="tel" name="phone" required placeholder="+91..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-sky-500">
+          </div>
+          <div>
+            <label class="block text-slate-300 mb-1 font-medium">Email *</label>
+            <input type="email" name="email" required placeholder="name@domain.com" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-sky-500">
+          </div>
+        </div>
+        <div>
+          <label class="block text-slate-300 mb-1 font-medium">Product *</label>
+          <select id="modalProductSelect" name="product" required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-sky-500">
+            <option value="48V 20Ah LiFePO4 Scooter Battery">Core Standard: 48V 20Ah (Scooter)</option>
+            <option value="51V 30Ah LiFePO4 Scooter Battery">Core Standard: 51V 30Ah (Scooter)</option>
+            <option value="60V 30Ah LiFePO4 Scooter Battery">Core Standard: 60V 30Ah (Scooter)</option>
+            <option value="60V 45Ah LiFePO4 Scooter Battery">60V 45Ah High Capacity (Scooter)</option>
+            <option value="48V 100Ah E-Rickshaw Battery">48V 100Ah E-Rickshaw Battery</option>
+            <option value="12V 100Ah Home Inverter Battery">12V 100Ah Inverter Battery</option>
+            <option value="Made by Custom Battery Pack">Made by Custom Battery Pack</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-slate-300 mb-1 font-medium">Estimated Quantity</label>
+          <input type="text" name="quantity" placeholder="Single unit, sample, or bulk fleet quantity" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-sky-500">
+        </div>
+        <div>
+          <label class="block text-slate-300 mb-1 font-medium">Specific Requirements / Notes</label>
+          <textarea name="message" rows="2" placeholder="Vehicle model, dimensions, or technical queries..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-sky-500"></textarea>
+        </div>
+        <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold text-xs shadow-lg shadow-sky-500/25 transition flex items-center justify-center gap-2">
+          <i class="fab fa-whatsapp text-sm"></i>
+          <span>Send Quote Request on WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Complaint Form Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Generate unique ticket reference ID
+      const randomTicketNum = Math.floor(100000 + Math.random() * 900000);
+      const ticketId = `CMP-2026-${randomTicketNum}`;
+      const ticketDisplay = document.getElementById('ticketNumberDisplay');
+      if (ticketDisplay) ticketDisplay.textContent = ticketId;
+
+      // 2. Complaint Form submission
+      const form = document.getElementById('complaintForm');
+      const feedback = document.getElementById('complaintFeedback');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const name = document.getElementById('cmpName').value.trim();
+          const phone = document.getElementById('cmpPhone').value.trim();
+          const email = document.getElementById('cmpEmail').value.trim();
+          const city = document.getElementById('cmpCity').value.trim();
+          const model = document.getElementById('cmpModel').value;
+          const app = document.getElementById('cmpApp').value;
+          const invoice = document.getElementById('cmpInvoice').value.trim() || 'Not Provided';
+          const serial = document.getElementById('cmpSerial').value.trim() || 'Not Provided';
+          const category = document.getElementById('cmpCategory').value;
+          const priority = document.getElementById('cmpPriority').value;
+          const details = document.getElementById('cmpDetails').value.trim();
+
+          const complaintData = {
+            ticketId,
+            name,
+            phone,
+            email,
+            city,
+            model,
+            application: app,
+            invoice,
+            serial,
+            category,
+            priority,
+            details,
+            date: new Date().toISOString()
+          };
+
+          // Save to local storage for local record
+          try {
+            const complaints = JSON.parse(localStorage.getItem('ms_powertech_complaints') || '[]');
+            complaints.push(complaintData);
+            localStorage.setItem('ms_powertech_complaints', JSON.stringify(complaints));
+          } catch (err) {}
+
+          // Format WhatsApp Complaint Message
+          const msg = `*🚨 NEW CUSTOMER COMPLAINT & GRIEVANCE REPORT*\n` +
+            `----------------------------------------\n` +
+            `🎫 *Ticket ID:* ${ticketId}\n` +
+            `👤 *Customer Name:* ${name}\n` +
+            `📱 *WhatsApp Phone:* ${phone}\n` +
+            `✉️ *Email:* ${email}\n` +
+            `📍 *Location:* ${city}\n` +
+            `----------------------------------------\n` +
+            `🔋 *Battery Model:* ${model}\n` +
+            `⚙️ *Application:* ${app}\n` +
+            `📄 *Invoice / Date:* ${invoice}\n` +
+            `🔢 *Serial / Batch:* ${serial}\n` +
+            `----------------------------------------\n` +
+            `⚠️ *Issue Category:* ${category}\n` +
+            `⚡ *Priority Level:* ${priority}\n` +
+            `📝 *Issue Description:*\n${details}\n` +
+            `----------------------------------------\n` +
+            `🏭 *To:* MS Powertech Grievance Redressal Cell\n` +
+            `📍 Bhojpur Dharampur, Moradabad (UP)\n` +
+            `🌐 www.powertechlithium.in`;
+
+          // Launch WhatsApp directly to owner/support
+          SITE_CONFIG.sendToWhatsApp(msg);
+
+          // Show Success Feedback on Page
+          if (feedback) {
+            feedback.innerHTML = `
+              <div class="p-6 rounded-2xl bg-amber-50 border-2 border-amber-500 text-slate-800 shadow-xl">
+                <div class="flex items-center gap-3 text-amber-700 mb-2">
+                  <i class="fas fa-check-circle text-2xl text-amber-600"></i>
+                  <h4 class="font-bold text-lg text-slate-900">Complaint Ticket #${ticketId} Forwarded!</h4>
+                </div>
+                <p class="text-xs text-slate-700 mb-2">
+                  Your complaint report has been successfully forwarded to our Technical & Quality Engineering Desk on WhatsApp.
+                </p>
+                <div class="p-3 bg-white rounded-xl border border-amber-200 text-xs font-mono text-slate-800 mb-4">
+                  <strong>Ticket Number:</strong> ${ticketId}<br>
+                  <strong>Priority:</strong> ${priority}<br>
+                  <strong>Model:</strong> ${model}
+                </div>
+                <p class="text-xs text-slate-600 mb-3">If WhatsApp did not launch automatically, click the button below to send your ticket directly:</p>
+                <a href="${SITE_CONFIG.getWhatsAppUrl(msg)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-md transition">
+                  <i class="fab fa-whatsapp text-base"></i>
+                  <span>Open WhatsApp Complaint Chat</span>
+                </a>
+              </div>
+            `;
+            feedback.classList.remove('hidden');
+            feedback.scrollIntoView({ behavior: 'smooth' });
+            form.reset();
+          }
+        });
+      }
+    });
+  </script>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
